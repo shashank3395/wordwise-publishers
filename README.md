@@ -150,6 +150,8 @@ PRELOAD_WORDNET=true npm start
 
 | Doc | Description |
 |-----|-------------|
+| [AGENTS.md](AGENTS.md) | **Start here for AI/agents** — status, conventions, key files |
+| [docs/HANDOFF.md](docs/HANDOFF.md) | Session handoff — update when you stop work |
 | [docs/PROJECT-OVERVIEW.md](docs/PROJECT-OVERVIEW.md) | v1 feature summary, architecture, limits |
 | [docs/DEPLOY.md](docs/DEPLOY.md) | Deploy to Railway / cloud |
 | [docs/GITHUB.md](docs/GITHUB.md) | Push to GitHub |

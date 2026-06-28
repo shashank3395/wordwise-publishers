@@ -1,0 +1,28 @@
+---
+description: WordWise project context — read AGENTS.md and HANDOFF.md before coding
+alwaysApply: true
+---
+
+# WordWise
+
+In-article dictionary widget for Indian news publishers (The Hindu pilot). **v1 is complete** — focus is deploy + pitch unless user asks for features.
+
+## Before coding
+
+1. Read [AGENTS.md](../../AGENTS.md) and [docs/HANDOFF.md](../../docs/HANDOFF.md) for current status.
+2. Lookup engine: `api/glossary/engine.js` — do not break layer order or context phrase matching.
+3. Glossary data in `data/glossary/*.json` — curated beats bulk.
+4. Backlog: [docs/lookup-remaining-enhancements.md](../../docs/lookup-remaining-enhancements.md)
+
+## Do not
+
+- Commit `data/analytics.json` or `data/vocabulary.json`
+- Force-push `main`
+- Apply policy phrase context to unrelated words in the same sentence
+
+## Verify changes
+
+```bash
+npm start
+curl -s -X POST localhost:3847/api/lookup -H 'Content-Type: application/json' -d '{"word":"yojana","context":""}'
+```
