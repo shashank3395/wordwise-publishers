@@ -1,0 +1,444 @@
+{
+  "v": 1,
+  "source": "PRS Budget primer, RBI glossary, editorial policy layer",
+  "phrases": {
+    "blackout period": {
+      "pos": "noun",
+      "definition": "A mandated stretch of days when work under a scheme is suspended, often during peak agricultural season.",
+      "domains": ["governance", "editorial"],
+      "explanation": "In this article, \"{word}\" refers to a planned suspension of rural employment work during peak farming season — not a power outage."
+    },
+    "bargaining power": {
+      "pos": "noun",
+      "definition": "The ability of workers to negotiate better wages and conditions.",
+      "domains": ["economics", "editorial"],
+      "explanation": "In this article, \"{word}\" refers to rural workers' ability to negotiate fair wages under employment schemes."
+    },
+    "funding pattern": {
+      "pos": "noun",
+      "definition": "The agreed ratio of financial responsibility between Centre and States.",
+      "domains": ["economics", "governance"],
+      "explanation": "In this article, \"{word}\" means how costs are split between the Centre and States for a programme."
+    },
+    "interim allocation": {
+      "pos": "noun",
+      "definition": "Temporary budget distribution pending a final financial settlement.",
+      "domains": ["economics", "governance"],
+      "explanation": "In this article, \"{word}\" refers to provisional funds assigned before the full budget is finalised."
+    },
+    "material bill": {
+      "pos": "noun",
+      "definition": "Costs of supplies and assets used in public works programmes.",
+      "domains": ["economics", "governance"],
+      "explanation": "In this article, \"{word}\" means expenses for physical materials in rural job schemes — distinct from wages."
+    },
+    "wage bill": {
+      "pos": "noun",
+      "definition": "Total amount spent on worker payments under a programme.",
+      "domains": ["economics", "governance"],
+      "explanation": "In this article, \"{word}\" refers to the total wages paid to workers under the scheme."
+    },
+    "fiscal deficit": {
+      "pos": "noun",
+      "definition": "Excess of total expenditure over total receipts excluding borrowings in a financial year.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" is the gap the government must borrow to fund spending — a headline budget indicator."
+    },
+    "revenue deficit": {
+      "pos": "noun",
+      "definition": "Shortfall when revenue expenditure exceeds revenue receipts.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" signals the government is borrowing to fund day-to-day spending, not just capital investment."
+    },
+    "primary deficit": {
+      "pos": "noun",
+      "definition": "Fiscal deficit minus interest payments on past debt.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" shows the underlying borrowing need before debt-servicing costs."
+    },
+    "vote on account": {
+      "pos": "noun",
+      "definition": "Interim parliamentary approval for government spending before the full budget is passed.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"{word}\" lets the government spend for a few months until the full Budget is approved."
+    },
+    "appropriation bill": {
+      "pos": "noun",
+      "definition": "Legislation authorising withdrawal of money from the Consolidated Fund for approved expenditure.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"{word}\" is the law that legally permits government spending for the year."
+    },
+    "finance bill": {
+      "pos": "noun",
+      "definition": "Bill containing tax and duty proposals presented with the Union Budget.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"{word}\" carries the tax changes announced in the Budget speech."
+    },
+    "grants-in-aid": {
+      "pos": "noun",
+      "definition": "Central transfers to States or bodies for specified purposes, outside normal devolution.",
+      "domains": ["economics", "governance"],
+      "explanation": "\"{word}\" are targeted Centre-to-State transfers for schemes or institutions."
+    },
+    "charged expenditure": {
+      "pos": "noun",
+      "definition": "Spending charged on the Consolidated Fund — not voted annually like ordinary demands.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"{word}\" is a constitutional category of spending (e.g. certain salaries) with special parliamentary treatment."
+    },
+    "contingent liability": {
+      "pos": "noun",
+      "definition": "Potential government obligation that may materialise depending on future events.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" is a risk on the books — such as loan guarantees — not yet actual spending."
+    },
+    "off-budget borrowings": {
+      "pos": "noun",
+      "definition": "Borrowing by public entities that does not appear in the government's fiscal deficit headline.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" can understate reported deficit if liabilities sit outside the Budget."
+    },
+    "repo rate": {
+      "pos": "noun",
+      "definition": "Rate at which RBI lends short-term funds to banks against government securities.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" is RBI's key policy rate — changes ripple through lending and deposit rates."
+    },
+    "reverse repo": {
+      "pos": "noun",
+      "definition": "Rate at which RBI absorbs liquidity from banks by lending securities overnight.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" is the floor for short-term money-market rates when RBI drains excess liquidity."
+    },
+    "open market operations": {
+      "pos": "noun",
+      "definition": "RBI sale or purchase of government securities to manage liquidity and interest rates.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" (OMO) are RBI's bond-market tools to inject or soak up cash in the banking system."
+    },
+    "liquidity adjustment facility": {
+      "pos": "noun",
+      "definition": "RBI facility for banks to borrow (repo) or park funds (reverse repo) overnight.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" (LAF) is the daily corridor through which RBI steers short-term liquidity."
+    },
+    "current account deficit": {
+      "pos": "noun",
+      "definition": "Excess of imports of goods, services and transfers over exports.",
+      "domains": ["economics", "ir"],
+      "explanation": "\"{word}\" (CAD) measures external imbalance — how much the country borrows from abroad to fund consumption and investment."
+    },
+    "non-performing assets": {
+      "pos": "noun",
+      "definition": "Loans where principal or interest is overdue beyond a regulatory threshold.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" (NPAs) are stressed loans that weaken bank balance sheets and curb credit growth."
+    },
+    "vb-g ram g": {
+      "pos": "noun",
+      "definition": "Viksit Bharat-Guarantee for Rozgar and Aajeevika Mission (Gramin) — rural employment scheme replacing MGNREGA.",
+      "domains": ["governance", "editorial"],
+      "explanation": "In this article, VB-G RAM G is the new rural jobs programme with greater State cost-sharing."
+    }
+  },
+  "terms": {
+    "reconsideration": {
+      "pos": "noun",
+      "definition": "Formal review of a decision or policy by authorities.",
+      "domains": ["governance", "editorial"],
+      "explanation": "In this article, \"{word}\" means States are asking the Centre to review proposed funding rules."
+    },
+    "crore": {
+      "pos": "noun",
+      "definition": "Ten million (10,000,000); standard Indian English unit for large sums in rupees.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" in Indian reporting means ₹1 crore = ₹10 million (1,00,00,000 rupees)."
+    },
+    "liability": {
+      "pos": "noun",
+      "definition": "Financial obligation — the amount a State must pay under a scheme.",
+      "domains": ["economics", "governance"],
+      "explanation": "In policy reporting, \"{word}\" often means a government's financial obligation under cost-sharing rules."
+    },
+    "reservations": {
+      "pos": "noun",
+      "definition": "Formal objections or concerns raised by States about a policy proposal.",
+      "domains": ["governance", "editorial"],
+      "requiresContext": true,
+      "contextMatch": "flagged|objected|raised|concern|state|ministry|scheme",
+      "explanation": "In this article, \"{word}\" means States formally objected to or expressed concern about specific provisions."
+    },
+    "blackout": {
+      "pos": "noun",
+      "definition": "A mandated period when work under a government scheme is suspended.",
+      "domains": ["governance", "editorial"],
+      "requiresContext": true
+    },
+    "devolution": {
+      "pos": "noun",
+      "definition": "Transfer of tax revenue or powers from the Centre to States as recommended by the Finance Commission.",
+      "domains": ["economics", "governance"],
+      "explanation": "\"{word}\" is how much of central taxes States receive — a core federal finance issue."
+    },
+    "appropriation": {
+      "pos": "noun",
+      "definition": "Parliamentary authorisation to withdraw funds from the Consolidated Fund for specified purposes.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"{word}\" is the legal step that turns budget allocations into spendable authority."
+    },
+    "consolidated": {
+      "pos": "adjective",
+      "definition": "Relating to the Consolidated Fund — the main account holding all government revenues.",
+      "domains": ["economics", "polity"],
+      "explanation": "In budget text, \"Consolidated Fund\" is where all tax and non-tax receipts are pooled."
+    },
+    "supplementary": {
+      "pos": "adjective",
+      "definition": "Additional grants sought when approved funds prove insufficient during the year.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"Supplementary grants\" are extra parliamentary approvals for spending beyond the original Budget."
+    },
+    "cess": {
+      "pos": "noun",
+      "definition": "Tax levied for a specific purpose; proceeds may be earmarked for a particular fund.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" is an earmarked levy — e.g. health or education cess — on top of base taxes."
+    },
+    "surcharge": {
+      "pos": "noun",
+      "definition": "Additional tax on income or other bases, often on higher slabs.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" raises revenue from high earners or specific categories beyond normal tax rates."
+    },
+    "disinvestment": {
+      "pos": "noun",
+      "definition": "Sale of government stake in public sector enterprises to raise revenue or improve efficiency.",
+      "domains": ["economics", "governance"],
+      "explanation": "\"{word}\" proceeds are a non-tax revenue source in the Budget."
+    },
+    "subsidy": {
+      "pos": "noun",
+      "definition": "Government payment that reduces the price of a good or service for beneficiaries.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" spending appears explicitly in expenditure budgets (food, fertiliser, fuel, etc.)."
+    },
+    "frbm": {
+      "pos": "noun",
+      "definition": "Fiscal Responsibility and Budget Management Act — law setting deficit and debt targets.",
+      "domains": ["economics", "polity"],
+      "explanation": "FRBM frames how much the Centre can borrow and sets medium-term fiscal discipline goals."
+    },
+    "buoyancy": {
+      "pos": "noun",
+      "definition": "Responsiveness of tax revenue growth to GDP growth.",
+      "domains": ["economics"],
+      "explanation": "Tax \"{word}\" above 1 means collections rise faster than the economy — helpful for fiscal consolidation."
+    },
+    "elasticity": {
+      "pos": "noun",
+      "definition": "Percentage change in tax revenue for each percentage change in national income.",
+      "domains": ["economics"],
+      "explanation": "In budget analysis, tax \"{word}\" measures how sensitive receipts are to economic cycles."
+    },
+    "repo": {
+      "pos": "noun",
+      "definition": "Repurchase agreement rate — RBI's overnight lending rate to banks.",
+      "domains": ["economics"],
+      "requiresContext": true
+    },
+    "crr": {
+      "pos": "noun",
+      "definition": "Cash Reserve Ratio — share of deposits banks must hold with RBI as cash.",
+      "domains": ["economics"],
+      "explanation": "CRR is a liquidity tool: a higher ratio locks more bank funds with RBI, tightening credit."
+    },
+    "slr": {
+      "pos": "noun",
+      "definition": "Statutory Liquidity Ratio — minimum share of deposits banks must hold in approved liquid assets.",
+      "domains": ["economics"],
+      "explanation": "SLR ensures banks hold government bonds and other safe assets alongside CRR."
+    },
+    "ndtl": {
+      "pos": "noun",
+      "definition": "Net Demand and Time Liabilities — deposit base used to calculate CRR and SLR.",
+      "domains": ["economics"],
+      "explanation": "NDTL is the denominator for reserve requirements — roughly banks' runnable liabilities."
+    },
+    "mpc": {
+      "pos": "noun",
+      "definition": "Monetary Policy Committee — six-member body that sets the repo rate for RBI.",
+      "domains": ["economics", "polity"],
+      "explanation": "The MPC meets bi-monthly to decide policy rates under India's inflation-targeting framework."
+    },
+    "mclr": {
+      "pos": "noun",
+      "definition": "Marginal Cost of Funds based Lending Rate — internal benchmark for bank loan pricing.",
+      "domains": ["economics"],
+      "explanation": "MCLR (largely superseded by external benchmarks) linked loan rates to banks' marginal funding cost."
+    },
+    "sterilization": {
+      "pos": "noun",
+      "definition": "RBI action to offset foreign-exchange intervention so domestic liquidity stays unchanged.",
+      "domains": ["economics", "ir"],
+      "explanation": "\"{word}\" prevents dollar purchases from automatically expanding rupee liquidity in the system."
+    },
+    "gilt": {
+      "pos": "noun",
+      "definition": "Government security (bond) issued by the Centre; benchmark for sovereign borrowing costs.",
+      "domains": ["economics"],
+      "explanation": "\"{word}\" yields are the reference for India's sovereign and corporate bond markets."
+    },
+    "forex": {
+      "pos": "noun",
+      "definition": "Foreign exchange reserves held by RBI — assets backing the rupee and external stability.",
+      "domains": ["economics", "ir"],
+      "explanation": "\"{word}\" reserves buffer imports and capital outflows; their level signals external strength."
+    },
+    "provisioning": {
+      "pos": "noun",
+      "definition": "Funds banks set aside against potential loan losses.",
+      "domains": ["economics"],
+      "explanation": "Higher \"{word}\" on NPAs reduces reported profits but strengthens capital buffers."
+    },
+    "deficit": {
+      "pos": "noun",
+      "definition": "Shortfall when expenditure exceeds receipts.",
+      "domains": ["economics"],
+      "requiresContext": true
+    },
+    "sanction": {
+      "pos": "noun",
+      "definition": "Official approval to allocate or release government funds.",
+      "domains": ["governance", "economics"],
+      "requiresContext": true
+    },
+    "advance": {
+      "pos": "noun",
+      "definition": "Funds released ahead of final settlement, often as grants-in-aid.",
+      "domains": ["economics", "governance"],
+      "requiresContext": true
+    },
+    "receipts": {
+      "pos": "noun",
+      "definition": "Government income from taxes, non-tax sources, borrowings and other inflows in the Budget.",
+      "domains": ["economics"],
+      "explanation": "In budget tables, \"{word}\" are inflows — revenue and capital receipts fund expenditure."
+    },
+    "expenditure": {
+      "pos": "noun",
+      "definition": "Total government spending in a financial year, split into revenue and capital heads.",
+      "domains": ["economics"],
+      "explanation": "Budget \"{word}\" covers salaries, subsidies, interest, and capital outlay on assets."
+    },
+    "capital": {
+      "pos": "adjective",
+      "definition": "Relating to investment spending that creates assets (infrastructure, equipment).",
+      "domains": ["economics"],
+      "explanation": "\"Capital expenditure\" builds assets; \"capital receipts\" include disinvestment and borrowings."
+    },
+    "revenue": {
+      "pos": "adjective",
+      "definition": "Relating to recurring income or day-to-day spending in the Budget.",
+      "domains": ["economics"],
+      "explanation": "\"Revenue expenditure\" covers salaries and subsidies; \"revenue receipts\" are taxes and fees."
+    },
+    "interim": {
+      "pos": "adjective",
+      "definition": "Temporary or provisional, pending a full settlement — as in interim budget or allocation.",
+      "domains": ["economics", "editorial"],
+      "explanation": "An \"{word}\" budget or allocation applies until a new government or full Budget is in place."
+    },
+    "allocation": {
+      "pos": "noun",
+      "definition": "Share of budget funds assigned to a ministry, scheme or State.",
+      "domains": ["economics", "governance"],
+      "explanation": "\"{word}\" figures show how much money a programme or department may spend."
+    },
+    "outlay": {
+      "pos": "noun",
+      "definition": "Planned amount of money for a scheme or ministry in the Budget.",
+      "domains": ["economics"],
+      "explanation": "Scheme \"{word}\" is the headline number in budget documents for planned spending."
+    },
+    "demand": {
+      "pos": "noun",
+      "definition": "In Parliament, a \"demand for grants\" is a ministry's spending proposal voted by MPs.",
+      "domains": ["economics", "polity"],
+      "explanation": "\"Demands for grants\" are how Lok Sabha approves each ministry's budget allocation."
+    },
+    "contingency": {
+      "pos": "noun",
+      "definition": "Contingency Fund — small reserve for urgent unforeseen expenditure, replenished by Parliament.",
+      "domains": ["economics", "polity"],
+      "explanation": "The Contingency Fund allows immediate spending in emergencies before regular parliamentary approval."
+    },
+    "inflation": {
+      "pos": "noun",
+      "definition": "Sustained rise in the general price level; RBI targets consumer inflation under MPC.",
+      "domains": ["economics"],
+      "explanation": "In monetary news, \"{word}\" drives RBI rate decisions — the current target band is 4% ± 2%."
+    },
+    "liquidity": {
+      "pos": "noun",
+      "definition": "Availability of cash in the banking system; managed by RBI through repo, CRR and OMO.",
+      "domains": ["economics"],
+      "explanation": "Tight \"{word}\" pushes short-term rates up; surplus liquidity can soften borrowing costs."
+    },
+    "yield": {
+      "pos": "noun",
+      "definition": "Return on a bond; moves inversely to its market price.",
+      "domains": ["economics"],
+      "requiresContext": true
+    },
+    "exposure": {
+      "pos": "noun",
+      "definition": "Total credit or investment at risk to a borrower, sector or instrument.",
+      "domains": ["economics"],
+      "requiresContext": true
+    }
+  },
+  "acronyms": {
+    "mgnrega": {
+      "fullForm": "Mahatma Gandhi National Rural Employment Guarantee Act",
+      "definition": "India's flagship rural jobs programme guaranteeing wage employment per household per year.",
+      "domains": ["governance", "editorial"],
+      "explanation": "In this article, MGNREGA is the predecessor scheme to VB-G RAM G with full Centre wage funding."
+    },
+    "mnrega": {
+      "fullForm": "Mahatma Gandhi National Rural Employment Guarantee Act",
+      "definition": "Common shorthand for MGNREGA, India's rural employment guarantee programme.",
+      "domains": ["governance", "editorial"],
+      "explanation": "MNREGA refers to the rural jobs scheme being replaced or reformed in this coverage."
+    },
+    "rti": {
+      "fullForm": "Right to Information",
+      "definition": "Law allowing citizens to request records from public authorities.",
+      "domains": ["governance", "legal"],
+      "explanation": "RTI is how journalists and citizens obtain official government documents and responses."
+    },
+    "ncpri": {
+      "fullForm": "National Campaign for People's Right to Information",
+      "definition": "Advocacy group promoting transparency and RTI usage in India.",
+      "domains": ["governance"],
+      "explanation": "NCPRI members often file RTI applications that surface policy disputes in the press."
+    },
+    "rbi": {
+      "fullForm": "Reserve Bank of India",
+      "definition": "India's central bank — monetary policy, currency issue, banking regulation.",
+      "domains": ["economics", "governance"],
+      "explanation": "RBI sets repo rate, manages forex reserves and supervises banks."
+    },
+    "gst": {
+      "fullForm": "Goods and Services Tax",
+      "definition": "Nationwide indirect tax on supply of goods and services.",
+      "domains": ["economics"],
+      "explanation": "GST collections are a major revenue receipt in Union and State budgets."
+    },
+    "frbm": {
+      "fullForm": "Fiscal Responsibility and Budget Management Act",
+      "definition": "Law setting fiscal deficit and debt targets for the Centre.",
+      "domains": ["economics", "polity"],
+      "explanation": "FRBM commits the government to gradual fiscal consolidation."
+    }
+  }
+}

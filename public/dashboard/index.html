@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordWise Publisher Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e8e8e8;
+      min-height: 100vh;
+    }
+    .header {
+      background: #1a1d27;
+      border-bottom: 1px solid #2a2d3a;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header h1 { font-size: 20px; font-weight: 700; }
+    .header h1 span { color: #c0392b; }
+    .header nav a {
+      color: #7eb8ff;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    .header nav a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 32px; }
+    .publisher-select {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .publisher-select label { font-size: 14px; color: #888; }
+    .publisher-select select {
+      background: #1a1d27;
+      border: 1px solid #333;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .stat-card {
+      background: #1a1d27;
+      border: 1px solid #2a2d3a;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .stat-card.highlight {
+      border-color: #c0392b55;
+      background: linear-gradient(135deg, #1a1d27, #221518);
+    }
+    .stat-card .label {
+      font-size: 11px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .stat-card .value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .stat-card .value.accent { color: #c0392b; }
+    .stat-card .value.green { color: #6fcf97; }
+    .stat-card .sub { font-size: 11px; color: #666; margin-top: 4px; line-height: 1.4; }
+    .insight-bar {
+      background: #1a1d27;
+      border: 1px solid #2a2d3a;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+    .insight-bar strong { color: #6fcf97; }
+    .panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 768px) {
+      .panels { grid-template-columns: 1fr; }
+    }
+    .panel {
+      background: #1a1d27;
+      border: 1px solid #2a2d3a;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .panel.full { grid-column: 1 / -1; }
+    .panel-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #2a2d3a;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .panel-header span { font-weight: 400; color: #666; font-size: 12px; }
+    .panel-body { padding: 16px 20px; }
+    .word-row, .article-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #222;
+      font-size: 14px;
+      gap: 12px;
+    }
+    .word-row:last-child, .article-row:last-child { border-bottom: none; }
+    .word-row .word { font-weight: 600; color: #fff; }
+    .word-row .word-meta { flex: 1; min-width: 0; }
+    .word-row .word-def {
+      font-size: 11px;
+      color: #777;
+      margin-top: 3px;
+      line-height: 1.4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .word-row .count, .article-row .count {
+      background: #c0392b22;
+      color: #ff6b6b;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .article-row .title {
+      flex: 1;
+      color: #ccc;
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .recent-row {
+      padding: 10px 0;
+      border-bottom: 1px solid #222;
+      font-size: 13px;
+    }
+    .recent-row:last-child { border-bottom: none; }
+    .recent-row .word { font-weight: 600; color: #7eb8ff; }
+    .recent-row .word-def { color: #666; font-size: 11px; margin-top: 3px; line-height: 1.4; }
+    .recent-row .article { color: #888; font-size: 11px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .recent-row .time { color: #555; font-size: 11px; margin-top: 2px; }
+    .empty { color: #555; font-size: 13px; text-align: center; padding: 24px; }
+    .pitch {
+      background: linear-gradient(135deg, #1a1d27 0%, #2a1520 100%);
+      border: 1px solid #c0392b44;
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .pitch h2 { font-size: 16px; margin-bottom: 12px; color: #ff6b6b; }
+    .pitch p { font-size: 14px; color: #aaa; line-height: 1.6; margin-bottom: 8px; }
+    .refresh-btn {
+      background: #c0392b;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .refresh-btn:hover { filter: brightness(1.1); }
+    .reset-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+    .reset-btn {
+      background: transparent;
+      color: #aaa;
+      border: 1px solid #444;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .reset-btn:hover { border-color: #888; color: #fff; }
+    .reset-btn.danger {
+      border-color: #c0392b66;
+      color: #ff6b6b;
+    }
+    .reset-btn.danger:hover {
+      background: #c0392b22;
+      border-color: #c0392b;
+    }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #2d5a2d;
+      color: #a8e6a8;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+      z-index: 100;
+    }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Word<span>Wise</span> Publisher Dashboard</h1>
+    <nav>
+      <a href="/">Demo Hub</a>
+      <a href="/demo">Simple Demo</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="publisher-select">
+      <label for="publisher">Publisher:</label>
+      <select id="publisher">
+        <option value="thehindu">The Hindu</option>
+        <option value="demo">Demo</option>
+        <option value="">All publishers</option>
+      </select>
+      <button class="refresh-btn" id="refresh">Refresh</button>
+      <div class="reset-group">
+        <button class="reset-btn" id="reset-analytics" type="button">Clear analytics</button>
+        <button class="reset-btn" id="reset-vocabulary" type="button">Clear notebooks</button>
+        <button class="reset-btn danger" id="reset-all" type="button">Reset all demo data</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card highlight">
+        <div class="label">Tab switches prevented</div>
+        <div class="value green" id="stat-retention">—</div>
+        <div class="sub">Lookups done on-page instead of Google</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Word Lookups</div>
+        <div class="value accent" id="stat-lookups">—</div>
+        <div class="sub"><span id="stat-context">—</span> with in-article context</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Engagement rate</div>
+        <div class="value" id="stat-rate">—</div>
+        <div class="sub">% of page views with a lookup</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Vocabulary Saves</div>
+        <div class="value" id="stat-saves">—</div>
+        <div class="sub">UPSC notebook — subscriber value</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Unique Sessions</div>
+        <div class="value" id="stat-sessions">—</div>
+        <div class="sub">Avg <span id="stat-time">—</span>s on page</div>
+      </div>
+    </div>
+
+    <div class="insight-bar" id="insight">
+      Loading insights…
+    </div>
+
+    <div class="panels">
+      <div class="panel">
+        <div class="panel-header">Top Confused Words <span>— with meanings</span></div>
+        <div class="panel-body" id="top-words">
+          <div class="empty">No lookups yet — try the demo article</div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Recent Lookups</div>
+        <div class="panel-body" id="recent-lookups">
+          <div class="empty">No recent activity</div>
+        </div>
+      </div>
+      <div class="panel full">
+        <div class="panel-header">Articles Driving Lookups</div>
+        <div class="panel-body" id="top-articles">
+          <div class="empty">No article data yet</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pitch">
+      <h2>Pitch talking points</h2>
+      <p><strong>Retention:</strong> Every lookup above is a reader who stayed on The Hindu instead of opening Google or a dictionary app.</p>
+      <p><strong>Editorial intelligence:</strong> "Top Confused Words" tells your desk which terms need explainers, glossaries, or simpler copy.</p>
+      <p><strong>UPSC wedge:</strong> Vocabulary saves = daily habit → subscription retention for your largest high-value segment.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2500);
+    }
+
+    async function resetData(endpoint, confirmMsg, successMsg) {
+      if (!confirm(confirmMsg)) {
+        return;
+      }
+      const res = await fetch(endpoint, { method: "POST" });
+      const data = await res.json();
+      if (data.ok) {
+        localStorage.setItem("wordwise_reset", String(Date.now()));
+        window.dispatchEvent(new CustomEvent("wordwise-reset"));
+        showToast(successMsg);
+        loadDashboard();
+      }
+    }
+
+    document.getElementById("reset-analytics").addEventListener("click", () =>
+      resetData(
+        "/api/analytics/reset",
+        "Clear all dashboard analytics (lookups, pageviews, sessions)?",
+        "Analytics cleared"
+      )
+    );
+
+    document.getElementById("reset-vocabulary").addEventListener("click", () =>
+      resetData(
+        "/api/vocabulary/reset",
+        "Clear all saved vocabulary notebooks for every user?",
+        "Notebooks cleared"
+      )
+    );
+
+    document.getElementById("reset-all").addEventListener("click", () =>
+      resetData(
+        "/api/demo/reset-all",
+        "Reset ALL demo data (analytics + notebooks)?",
+        "All demo data reset"
+      )
+    );
+
+    async function loadDashboard() {
+      const publisher = document.getElementById("publisher").value;
+      const params = publisher ? `?publisher=${encodeURIComponent(publisher)}` : "";
+      const res = await fetch(`/api/analytics/summary${params}`);
+      const data = await res.json();
+
+      document.getElementById("stat-retention").textContent = data.tabSwitchesPrevented.toLocaleString();
+      document.getElementById("stat-lookups").textContent = data.totalLookups.toLocaleString();
+      document.getElementById("stat-context").textContent = data.contextLookups.toLocaleString();
+      document.getElementById("stat-rate").textContent = data.lookupRate + "%";
+      document.getElementById("stat-saves").textContent = data.totalVocabularySaves.toLocaleString();
+      document.getElementById("stat-sessions").textContent = data.uniqueSessions.toLocaleString();
+      document.getElementById("stat-time").textContent = data.avgTimeOnPageSeconds;
+
+      const topWord = data.topWords[0];
+      const insight = document.getElementById("insight");
+      if (data.totalLookups === 0) {
+        insight.innerHTML = "Open a demo article, look up a few words like <strong>blackout</strong> or <strong>MGNREGA</strong>, then refresh this page.";
+      } else if (topWord) {
+        insight.innerHTML = `<strong>${topWord.count} readers</strong> looked up "<strong>${escapeHtml(topWord.word)}</strong>" — that's ${topWord.count} Google searches you prevented on one term alone.`;
+      }
+
+      const topWordsEl = document.getElementById("top-words");
+      if (data.topWords.length === 0) {
+        topWordsEl.innerHTML = '<div class="empty">No lookups yet — try the demo article</div>';
+      } else {
+        topWordsEl.innerHTML = data.topWords
+          .map((w) => {
+            const def = w.definition
+              ? `<div class="word-def">${escapeHtml(w.definition)}</div>`
+              : "";
+            return `<div class="word-row"><div class="word-meta"><div class="word">${escapeHtml(w.word)}</div>${def}</div><span class="count">${w.count} lookups</span></div>`;
+          })
+          .join("");
+      }
+
+      const recentEl = document.getElementById("recent-lookups");
+      if (data.recentLookups.length === 0) {
+        recentEl.innerHTML = '<div class="empty">No recent activity</div>';
+      } else {
+        recentEl.innerHTML = data.recentLookups
+          .map((e) => {
+            const time = e.timestamp ? new Date(e.timestamp).toLocaleString() : "";
+            const article = e.articleTitle ? `<div class="article">${escapeHtml(e.articleTitle)}</div>` : "";
+            const def = e.definition ? `<div class="word-def">${escapeHtml(e.definition)}</div>` : "";
+            return `<div class="recent-row"><div class="word">${escapeHtml(e.word || "—")}</div>${def}${article}<div class="time">${time}</div></div>`;
+          })
+          .join("");
+      }
+
+      const articlesEl = document.getElementById("top-articles");
+      if (!data.topArticles || data.topArticles.length === 0) {
+        articlesEl.innerHTML = '<div class="empty">No article data yet</div>';
+      } else {
+        articlesEl.innerHTML = data.topArticles
+          .map((a) => `<div class="article-row"><span class="title">${escapeHtml(a.title)}</span><span class="count">${a.count} lookups</span></div>`)
+          .join("");
+      }
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    document.getElementById("publisher").addEventListener("change", loadDashboard);
+    document.getElementById("refresh").addEventListener("click", loadDashboard);
+
+    let refreshTimer = null;
+    function startRefresh() {
+      if (refreshTimer) {
+        return;
+      }
+      refreshTimer = setInterval(loadDashboard, 8000);
+    }
+    function stopRefresh() {
+      if (refreshTimer) {
+        clearInterval(refreshTimer);
+        refreshTimer = null;
+      }
+    }
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        stopRefresh();
+      } else {
+        loadDashboard();
+        startRefresh();
+      }
+    });
+
+    loadDashboard();
+    startRefresh();
+  </script>
+</body>
+</html>

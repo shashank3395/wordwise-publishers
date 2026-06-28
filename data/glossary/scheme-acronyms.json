@@ -1,0 +1,156 @@
+{
+  "v": 1,
+  "source": "DoRD / CAG / government scheme abbreviations",
+  "acronyms": {
+    "pmjay": {
+      "fullForm": "Pradhan Mantri Jan Arogya Yojana",
+      "definition": "National health insurance scheme providing cashless treatment to eligible families.",
+      "domains": ["governance", "health"]
+    },
+    "pmay": {
+      "fullForm": "Pradhan Mantri Awas Yojana",
+      "definition": "Central housing scheme for affordable homes in urban and rural areas.",
+      "domains": ["governance", "rural"]
+    },
+    "pmayg": {
+      "fullForm": "Pradhan Mantri Awaas Yojana Gramin",
+      "definition": "Rural housing programme under PMAY providing pucca houses with basic amenities.",
+      "domains": ["governance", "rural"]
+    },
+    "pmgsy": {
+      "fullForm": "Pradhan Mantri Gram Sadak Yojana",
+      "definition": "Rural roads connectivity programme linking villages to all-weather roads.",
+      "domains": ["governance", "rural"]
+    },
+    "nrlm": {
+      "fullForm": "National Rural Livelihoods Mission",
+      "definition": "Poverty alleviation mission promoting self-help groups and rural enterprise.",
+      "domains": ["governance", "rural"]
+    },
+    "daynrlm": {
+      "fullForm": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission",
+      "definition": "Renamed NRLM umbrella for rural poverty reduction and SHG-led livelihoods.",
+      "domains": ["governance", "rural"]
+    },
+    "nsap": {
+      "fullForm": "National Social Assistance Programme",
+      "definition": "Social security pensions and family benefit schemes for poor households.",
+      "domains": ["governance", "rural"]
+    },
+    "icds": {
+      "fullForm": "Integrated Child Development Services",
+      "definition": "Anganwadi-based programme for child nutrition, health and pre-school education.",
+      "domains": ["governance", "health"]
+    },
+    "nfsa": {
+      "fullForm": "National Food Security Act",
+      "definition": "Law guaranteeing subsidised food grains to eligible households via PDS.",
+      "domains": ["governance", "economics"]
+    },
+    "pds": {
+      "fullForm": "Public Distribution System",
+      "definition": "Government network for distributing subsidised food and essentials.",
+      "domains": ["governance", "economics"]
+    },
+    "msp": {
+      "fullForm": "Minimum Support Price",
+      "definition": "Floor price at which government agencies procure crops from farmers.",
+      "domains": ["economics", "governance"]
+    },
+    "fci": {
+      "fullForm": "Food Corporation of India",
+      "definition": "Central agency for foodgrain procurement, storage and PDS distribution.",
+      "domains": ["governance", "economics"]
+    },
+    "secc": {
+      "fullForm": "Socio-Economic and Caste Census",
+      "definition": "Survey data used to identify deprivation and target welfare beneficiaries.",
+      "domains": ["governance"]
+    },
+    "gem": {
+      "fullForm": "Government e-Marketplace",
+      "definition": "Online procurement platform for government buyers and vendors.",
+      "domains": ["governance"]
+    },
+    "pfms": {
+      "fullForm": "Public Financial Management System",
+      "definition": "End-to-end platform for tracking government expenditure and fund flows.",
+      "domains": ["governance", "economics"]
+    },
+    "cag": {
+      "fullForm": "Comptroller and Auditor General of India",
+      "definition": "Constitutional authority auditing government accounts and public spending.",
+      "domains": ["governance", "polity"]
+    },
+    "cbi": {
+      "fullForm": "Central Bureau of Investigation",
+      "definition": "Premier investigating agency for corruption and major criminal cases.",
+      "domains": ["governance", "polity"]
+    },
+    "ed": {
+      "fullForm": "Enforcement Directorate",
+      "definition": "Agency enforcing foreign exchange and money-laundering laws.",
+      "domains": ["governance", "legal"]
+    },
+    "sfio": {
+      "fullForm": "Serious Fraud Investigation Office",
+      "definition": "Multi-disciplinary agency probing serious corporate frauds.",
+      "domains": ["governance", "legal"]
+    },
+    "nclt": {
+      "fullForm": "National Company Law Tribunal",
+      "definition": "Adjudicatory body for company law disputes and insolvency cases.",
+      "domains": ["legal", "governance"]
+    },
+    "ibc": {
+      "fullForm": "Insolvency and Bankruptcy Code",
+      "definition": "Unified law for resolving corporate and individual insolvency.",
+      "domains": ["legal", "economics"]
+    },
+    "gstn": {
+      "fullForm": "Goods and Services Tax Network",
+      "definition": "IT backbone for GST registration, filing and tax administration.",
+      "domains": ["economics", "governance"]
+    },
+    "cbdt": {
+      "fullForm": "Central Board of Direct Taxes",
+      "definition": "Policy body for administration of direct taxes including income tax.",
+      "domains": ["economics", "governance"]
+    },
+    "cbic": {
+      "fullForm": "Central Board of Indirect Taxes and Customs",
+      "definition": "Policy body for GST, customs and central excise administration.",
+      "domains": ["economics", "governance"]
+    },
+    "niti": {
+      "fullForm": "National Institution for Transforming India (NITI Aayog)",
+      "definition": "Government think tank replacing Planning Commission; advises on policy and programmes.",
+      "domains": ["governance", "economics"]
+    },
+    "fc": {
+      "fullForm": "Finance Commission",
+      "definition": "Constitutional body recommending Centre–State tax devolution and grants.",
+      "domains": ["governance", "economics"]
+    },
+    "sagarmala": {
+      "fullForm": "Sagarmala Programme",
+      "definition": "Port-led development initiative for coastal shipping and logistics.",
+      "domains": ["governance", "economics"]
+    },
+    "uday": {
+      "fullForm": "Ujwal DISCOM Assurance Yojana",
+      "definition": "Scheme for financial turnaround of state electricity distribution companies.",
+      "domains": ["governance", "economics"]
+    },
+    "ujjwala": {
+      "fullForm": "Pradhan Mantri Ujjwala Yojana",
+      "definition": "LPG connection scheme for women from below-poverty-line households.",
+      "domains": ["governance", "rural"]
+    },
+    "swachh": {
+      "fullForm": "Swachh Bharat Mission",
+      "definition": "National campaign for sanitation, toilet construction and waste management.",
+      "domains": ["governance"]
+    }
+  }
+}

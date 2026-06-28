@@ -1,0 +1,21 @@
+{
+  "name": "wordwise-publishers",
+  "version": "1.0.0",
+  "description": "In-article word meaning widget for news publishers",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build:glossary": "node scripts/build-static-glossary.mjs",
+    "build:hindi": "node scripts/build-hindi-glossary.mjs",
+    "build:all": "npm run build:glossary && npm run build:hindi",
+    "mine:terms": "node scripts/mine-hindu-terms.mjs",
+    "load-test": "node scripts/load-test-lookup.mjs"
+  },
+  "dependencies": {
+    "wordnet": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

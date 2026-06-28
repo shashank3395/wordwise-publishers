@@ -1,0 +1,314 @@
+{
+  "v": 1,
+  "source": "Common Hindi/Sanskrit terms in English-language Indian newspapers",
+  "terms": {
+    "yojana": {
+      "hindi": "योजना",
+      "transliteration": "yojana",
+      "definition": "Scheme or plan — used in government programme names (e.g. Ujjwala Yojana).",
+      "pos": "noun",
+      "usage": "Often suffix in scheme names: [Name] Yojana = [Name] Scheme."
+    },
+    "gramin": {
+      "hindi": "ग्रामीण",
+      "transliteration": "grāmīṇ",
+      "definition": "Rural; relating to villages.",
+      "pos": "adjective",
+      "usage": "Gramin = rural, as in rural employment or rural development."
+    },
+    "lok": {
+      "hindi": "लोक",
+      "transliteration": "lok",
+      "definition": "People; the public — as in Lok Sabha (House of the People).",
+      "pos": "noun"
+    },
+    "sabha": {
+      "hindi": "सभा",
+      "transliteration": "sabhā",
+      "definition": "Assembly or house — legislative chamber or meeting.",
+      "pos": "noun",
+      "usage": "Lok Sabha, Rajya Sabha."
+    },
+    "jan": {
+      "hindi": "जन",
+      "transliteration": "jan",
+      "definition": "People — used in compound names (Jan Arogya = people's health).",
+      "pos": "noun"
+    },
+    "arogya": {
+      "hindi": "आरोग्य",
+      "transliteration": "ārogya",
+      "definition": "Health; freedom from disease.",
+      "pos": "noun"
+    },
+    "vikas": {
+      "hindi": "विकास",
+      "transliteration": "vikās",
+      "definition": "Development; growth or progress.",
+      "pos": "noun"
+    },
+    "rozgar": {
+      "hindi": "रोज़गार",
+      "transliteration": "rozgār",
+      "definition": "Employment; livelihood through work.",
+      "pos": "noun"
+    },
+    "aajeevika": {
+      "hindi": "आजीविका",
+      "transliteration": "ājīvikā",
+      "definition": "Livelihood; means of earning a living.",
+      "pos": "noun"
+    },
+    "sarkar": {
+      "hindi": "सरकार",
+      "transliteration": "sarkār",
+      "definition": "Government; the ruling authority.",
+      "pos": "noun"
+    },
+    "kendra": {
+      "hindi": "\u0915\u0947\u0902\u0926\u094d\u0930",
+      "transliteration": "kendra",
+      "definition": "Centre — often the Union/Central government in policy reporting.",
+      "pos": "noun",
+      "usage": "Kendra sarkar = Centre (Union government)."
+    },
+    "rajya": {
+      "hindi": "राज्य",
+      "transliteration": "rājya",
+      "definition": "State — a federated unit or realm.",
+      "pos": "noun",
+      "usage": "Rajya Sabha = Council of States."
+    },
+    "rashtra": {
+      "hindi": "राष्ट्र",
+      "transliteration": "rāṣṭra",
+      "definition": "Nation; country.",
+      "pos": "noun"
+    },
+    "bharat": {
+      "hindi": "भारत",
+      "transliteration": "Bhārat",
+      "definition": "India — official Hindi name of the country.",
+      "pos": "noun"
+    },
+    "kisan": {
+      "hindi": "किसान",
+      "transliteration": "kisān",
+      "definition": "Farmer; cultivator.",
+      "pos": "noun"
+    },
+    "panchayat": {
+      "hindi": "पंचायत",
+      "transliteration": "panchāyat",
+      "definition": "Village council; local self-government body.",
+      "pos": "noun"
+    },
+    "samiti": {
+      "hindi": "समिति",
+      "transliteration": "samiti",
+      "definition": "Committee or society.",
+      "pos": "noun"
+    },
+    "mandal": {
+      "hindi": "मंडल",
+      "transliteration": "maṇḍal",
+      "definition": "Division, zone, or block — administrative or political grouping.",
+      "pos": "noun"
+    },
+    "jila": {
+      "hindi": "जिला",
+      "transliteration": "zilā",
+      "definition": "District — primary administrative unit below State.",
+      "pos": "noun",
+      "aliases": ["zila", "jilla", "zilla"]
+    },
+    "tehsil": {
+      "hindi": "तहसील",
+      "transliteration": "tahsīl",
+      "definition": "Sub-district administrative unit.",
+      "pos": "noun",
+      "aliases": ["tahsil", "taluka"]
+    },
+    "shiksha": {
+      "hindi": "शिक्षा",
+      "transliteration": "śikṣā",
+      "definition": "Education; teaching and learning.",
+      "pos": "noun"
+    },
+    "swasthya": {
+      "hindi": "स्वास्थ्य",
+      "transliteration": "svāsthya",
+      "definition": "Health; physical well-being.",
+      "pos": "noun"
+    },
+    "shram": {
+      "hindi": "श्रम",
+      "transliteration": "śram",
+      "definition": "Labour; physical or manual work.",
+      "pos": "noun"
+    },
+    "niti": {
+      "hindi": "नीति",
+      "transliteration": "nīti",
+      "definition": "Policy; guiding principle or strategy.",
+      "pos": "noun"
+    },
+    "karya": {
+      "hindi": "कार्य",
+      "transliteration": "kārya",
+      "definition": "Work; task or function.",
+      "pos": "noun"
+    },
+    "karyakram": {
+      "hindi": "कार्यक्रम",
+      "transliteration": "kāryakram",
+      "definition": "Programme; scheduled plan of activities.",
+      "pos": "noun"
+    },
+    "pariyojana": {
+      "hindi": "परियोजना",
+      "transliteration": "pariyojanā",
+      "definition": "Project — planned undertaking, often infrastructure.",
+      "pos": "noun"
+    },
+    "sahayata": {
+      "hindi": "सहायता",
+      "transliteration": "sahāyatā",
+      "definition": "Assistance; aid or support.",
+      "pos": "noun"
+    },
+    "anudan": {
+      "hindi": "अनुदान",
+      "transliteration": "anudān",
+      "definition": "Grant; financial aid, often non-repayable.",
+      "pos": "noun"
+    },
+    "adhiniyam": {
+      "hindi": "अधिनियम",
+      "transliteration": "adhiniyam",
+      "definition": "Act — a law passed by Parliament or legislature.",
+      "pos": "noun"
+    },
+    "vidhan": {
+      "hindi": "विधान",
+      "transliteration": "vidhān",
+      "definition": "Legislation; law-making or statute.",
+      "pos": "noun"
+    },
+    "sansad": {
+      "hindi": "संसद",
+      "transliteration": "sansad",
+      "definition": "Parliament — the national legislature.",
+      "pos": "noun"
+    },
+    "pradhan": {
+      "hindi": "प्रधान",
+      "transliteration": "pradhān",
+      "definition": "Chief; principal or head — as in Pradhan Mantri (Prime Minister).",
+      "pos": "adjective"
+    },
+    "mantri": {
+      "hindi": "मंत्री",
+      "transliteration": "mantrī",
+      "definition": "Minister — member of the government cabinet.",
+      "pos": "noun"
+    },
+    "mantrialay": {
+      "hindi": "मंत्रालय",
+      "transliteration": "mantrālay",
+      "definition": "Ministry — government department headed by a minister.",
+      "pos": "noun"
+    },
+    "nyayalay": {
+      "hindi": "न्यायालय",
+      "transliteration": "nyāyālay",
+      "definition": "Court; place of justice.",
+      "pos": "noun"
+    },
+    "kanoon": {
+      "hindi": "कानून",
+      "transliteration": "kānūn",
+      "definition": "Law; rule enacted by authority.",
+      "pos": "noun",
+      "aliases": ["qanoon"]
+    },
+    "mahila": {
+      "hindi": "महिला",
+      "transliteration": "mahilā",
+      "definition": "Woman; female.",
+      "pos": "noun"
+    },
+    "bal": {
+      "hindi": "बाल",
+      "transliteration": "bāl",
+      "definition": "Child — used in compounds (bal vikas = child development).",
+      "pos": "noun"
+    },
+    "swachh": {
+      "hindi": "स्वच्छ",
+      "transliteration": "svachchh",
+      "definition": "Clean — as in Swachh Bharat (Clean India).",
+      "pos": "adjective"
+    },
+    "ujjwala": {
+      "hindi": "उज्ज्वला",
+      "transliteration": "ujjwalā",
+      "definition": "Bright; radiant — used in Ujjwala Yojana (LPG scheme).",
+      "pos": "adjective"
+    },
+    "viksit": {
+      "hindi": "विकसित",
+      "transliteration": "viksit",
+      "definition": "Developed — as in Viksit Bharat (Developed India).",
+      "pos": "adjective"
+    },
+    "garib": {
+      "hindi": "गरीब",
+      "transliteration": "garīb",
+      "definition": "Poor; economically disadvantaged.",
+      "pos": "adjective"
+    },
+    "antyodaya": {
+      "hindi": "अंत्योदय",
+      "transliteration": "antyodaya",
+      "definition": "Uplift of the last person — targeting the poorest first.",
+      "pos": "noun"
+    },
+    "lakh": {
+      "hindi": "लाख",
+      "transliteration": "lākh",
+      "definition": "One hundred thousand (100,000); standard Indian numeral unit.",
+      "pos": "noun"
+    },
+    "crore": {
+      "hindi": "करोड़",
+      "transliteration": "karōṛ",
+      "definition": "Ten million (10,000,000); standard Indian numeral unit.",
+      "pos": "noun"
+    },
+    "kharcha": {
+      "hindi": "खर्च",
+      "transliteration": "kharcha",
+      "definition": "Expenditure; spending.",
+      "pos": "noun"
+    },
+    "vyay": {
+      "hindi": "व्यय",
+      "transliteration": "vyay",
+      "definition": "Expense; outlay (formal Hindi for expenditure).",
+      "pos": "noun"
+    },
+    "aay": {
+      "hindi": "आय",
+      "transliteration": "āy",
+      "definition": "Income; revenue receipts.",
+      "pos": "noun"
+    },
+    "kar": {
+      "hindi": "कर",
+      "transliteration": "kar",
+      "definition": "Tax; levy imposed by government.",
+      "pos": "noun"
+    }
+  }
+}

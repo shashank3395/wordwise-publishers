@@ -1,0 +1,125 @@
+{
+  "v": 1,
+  "rules": [
+    {
+      "id": "blackout-scheme",
+      "terms": ["blackout"],
+      "match": "blackout period|non-working|scheme|agricultural|season|mgnrega|employment",
+      "avoid": "power|electricity|grid|internet|telecom|outage",
+      "definition": "A defined period when certain work or payments under a scheme are not permitted.",
+      "explanation": "In rural employment schemes, a \"blackout period\" is a seasonal window when work is paused—often during peak farming—not a power cut."
+    },
+    {
+      "id": "deficit-fiscal",
+      "terms": ["deficit"],
+      "match": "fiscal|budget|revenue|expenditure|frbm|finance minister|union budget",
+      "avoid": "trade|current account|attention|deficit disorder",
+      "definition": "Shortfall when government spending exceeds receipts in a given year.",
+      "explanation": "In budget coverage, \"deficit\" usually means the fiscal gap—the amount the government must borrow to fund spending."
+    },
+    {
+      "id": "repo-monetary",
+      "terms": ["repo"],
+      "match": "rbi|reserve bank|monetary policy|mpc|interest rate|liquidity|reverse repo",
+      "avoid": "github|software|repository|repossess",
+      "definition": "Repurchase agreement rate at which RBI lends short-term funds to banks.",
+      "explanation": "When RBI is mentioned, \"repo\" is the key policy rate banks pay to borrow overnight from the central bank."
+    },
+    {
+      "id": "yield-bonds",
+      "terms": ["yield"],
+      "match": "bond|gilt|treasury|sovereign|bps|basis point|10-year|debt market",
+      "avoid": "crop|agricultural|farm|harvest|manufacturing",
+      "definition": "Return an investor earns on a bond, moving inversely to its price.",
+      "explanation": "In markets coverage, \"yield\" refers to bond returns—e.g. the 10-year gilt yield—not agricultural output."
+    },
+    {
+      "id": "sanction-funds",
+      "terms": ["sanction"],
+      "match": "fund|allocation|project|ministry|cabinet|approve|release|grant",
+      "avoid": "sanctions on|embargo|iran|russia|ofac|trade ban",
+      "definition": "Official approval to allocate or release government funds for a programme or project.",
+      "explanation": "In Indian government reporting, \"sanction\" often means administrative approval of money—not international economic sanctions."
+    },
+    {
+      "id": "bill-parliament",
+      "terms": ["bill"],
+      "match": "parliament|lok sabha|rajya sabha|passed|introduced|legislation|amendment act",
+      "avoid": "electricity bill|water bill|invoice|dollar bill",
+      "definition": "A proposed law introduced in Parliament for debate and enactment.",
+      "explanation": "In political news, a \"bill\" is draft legislation—such as the Finance Bill—not a utility invoice."
+    },
+    {
+      "id": "house-parliament",
+      "terms": ["house"],
+      "match": "lok sabha|rajya sabha|parliament|speaker|session|debate|mp|member",
+      "avoid": "housing|real estate|household|white house",
+      "definition": "A chamber of Parliament—the Lok Sabha or Rajya Sabha.",
+      "explanation": "\"House\" in Parliament reporting means a legislative chamber, not a residential building."
+    },
+    {
+      "id": "bench-court",
+      "terms": ["bench"],
+      "match": "supreme court|high court|judge|chief justice|hearing|verdict|petition",
+      "avoid": "park bench|furniture|cricket",
+      "definition": "A panel of judges hearing a case in court.",
+      "explanation": "A \"bench\" is the set of judges on a matter—e.g. a Constitution Bench—not seating furniture."
+    },
+    {
+      "id": "standing-committee",
+      "terms": ["standing"],
+      "match": "committee|parliament|lok sabha|rajya sabha|scrutiny|report",
+      "avoid": "standing ovation|standing army|long-standing",
+      "definition": "Permanent parliamentary committee that examines bills, budgets and ministries.",
+      "explanation": "\"Standing committee\" is a fixed parliamentary panel—not merely something that is upright or enduring."
+    },
+    {
+      "id": "charge-expenditure",
+      "terms": ["charged"],
+      "match": "expenditure|consolidated fund|appropriation|salary|president|governor|cag",
+      "avoid": "charged with crime|battery charged|fee charged",
+      "definition": "Expenditure charged on the Consolidated Fund—voted by Parliament but not subject to annual vote in the same way.",
+      "explanation": "In budget terminology, \"charged expenditure\" is a constitutional category of spending—not a criminal accusation."
+    },
+    {
+      "id": "advance-gia",
+      "terms": ["advance"],
+      "match": "grant|grants-in-aid|state|centre|release|finance ministry|devolution",
+      "avoid": "advance booking|advance payment|technological advance",
+      "definition": "Funds released ahead of final settlement, often as grants-in-aid to States.",
+      "explanation": "An \"advance\" to States is an early transfer of approved grants—not a generic prepayment."
+    },
+    {
+      "id": "slump-economy",
+      "terms": ["slump"],
+      "match": "growth|gdp|economy|manufacturing|exports|demand|recession",
+      "avoid": "slump test|concrete|posture",
+      "definition": "A sharp or sustained decline in economic activity, demand or prices.",
+      "explanation": "In business pages, a \"slump\" signals falling output or sales—not a physical collapse."
+    },
+    {
+      "id": "margin-finance",
+      "terms": ["margin"],
+      "match": "profit|ebitda|quarter|earnings|bps|spread|lender|bank",
+      "avoid": "margin of victory|page margin|safety margin",
+      "definition": "Difference between revenue and costs, or between two financial rates.",
+      "explanation": "Financial \"margin\" is profitability or the gap between rates—not a page border or electoral lead."
+    },
+    {
+      "id": "exposure-banking",
+      "terms": ["exposure"],
+      "match": "bank|npa|loan|lender|rbi|default|sector|credit",
+      "avoid": "media exposure|sun exposure|radiation",
+      "definition": "Total amount a bank has lent or is at risk of losing to a borrower or sector.",
+      "explanation": "Banking \"exposure\" is outstanding credit risk—not publicity or sunlight."
+    },
+    {
+      "id": "rollout-scheme",
+      "terms": ["rollout", "roll-out", "roll out"],
+      "match": "scheme|programme|nationwide|phase|launch|implement|states",
+      "avoid": "rollout of product|software|iphone",
+      "definition": "Phased implementation of a government scheme across regions or beneficiaries.",
+      "explanation": "\"Rollout\" in policy news means expanding a scheme geographically—not a tech product launch."
+    }
+  ]
+}
